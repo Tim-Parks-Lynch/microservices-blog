@@ -1,0 +1,22 @@
+
+
+###
+GET http://localhost:4000/posts
+// Remember previously we would want an authorization barrier here
+
+###
+POST http://localhost:4000/posts
+Content-Type: application/json
+
+{
+  "title": "New post by Tim"
+}
+
+###
+POST http://localhost:4000/posts
+Content-Type: application/json
+
+{
+  "title": "New post by random"
+}
+

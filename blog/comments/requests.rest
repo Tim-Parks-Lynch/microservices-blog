@@ -1,0 +1,35 @@
+
+//Services for Posts
+###
+GET http://localhost:4000/posts
+// Remember previously we would want an authorization barrier here
+
+###
+POST http://localhost:4000/posts
+Content-Type: application/json
+
+{
+  "title": "New post by Tim"
+}
+
+###
+POST http://localhost:4000/posts
+Content-Type: application/json
+
+{
+  "title": "New post by random"
+}
+
+// Services for Comments
+###
+GET http://localhost:4001/posts/123/comments
+
+###
+POST http://localhost:4001/posts/123/comments
+Content-Type: application/json
+
+{
+  "content": "I am a comment"
+}
+
+###
